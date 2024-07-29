@@ -1,0 +1,24 @@
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  left: 0;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+  
+}
+a::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0;
+  left: 0;
+  top: 100%;
+  border-radius: 2px;
+  background-color: rgb(37, 186, 29);
+  transition: 0.5s;
+  box-shadow: 0px 0px 8px rgb(229, 92, 7);
+}
+a:hover::after {
+  width: 100%;
+}
